@@ -12,8 +12,9 @@ export const Grid = styled.div`
     "video video video form"
     "heading heading heading heading"
     "img1 img2 img3 home";
-  /* background-color: #2196f3; */
+  /* grid-gap: .5rem; */
   align-items: flex-end;
+  margin-top: 1rem;
 `
 export const VidCntr = styled.div`
   grid-area: video;
@@ -104,9 +105,11 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   border: none;
+  border-radius: 0;
 `
 
 export const Button = styled.button`
   background-color: #39B54A;
   border: none;
+  padding: 5px 10px;
 `

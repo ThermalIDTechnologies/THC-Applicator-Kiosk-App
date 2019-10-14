@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useRef } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import RollOnProVid from "../assets/THC_RollOnPro_YouTube (1).webm"
+import RollOnProVid2 from "../assets/THC_RollOnPro_YouTube (1).mp4"
 import { StoreContext } from "../context/StoreContext"
 import {
   Grid,
@@ -41,6 +42,7 @@ const SecondPage = () => {
         <VidCntr>
           <video ref={vidRef} width="685" controls autoPlay>
             <source src={RollOnProVid} type="video/webm" />
+            <source src={RollOnProVid2} type="video/mp4" />
           </video>
         </VidCntr>
         <MainImgCntr>

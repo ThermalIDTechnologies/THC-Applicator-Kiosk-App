@@ -25,7 +25,7 @@ const Header = () => {
           display: `flex`,
           background: `rgba(74, 119, 41, 0.7)`,
           width: `70%`,
-          minHeight: `130px`,
+          minHeight: `106px`,
         }}
       >
         <h1
@@ -34,8 +34,8 @@ const Header = () => {
             margin: 0,
             padding: 0,
             color: `white`,
-            fontSize: `2rem`,
-            padding: `1.45rem 1.45rem`,
+            fontSize: `1.8rem`,
+            padding: `1rem 1.45rem`,
           }}
         >
           {pageTitle}
@@ -44,10 +44,10 @@ const Header = () => {
       <div
         style={{
           margin: `0 auto`,
-          paddingTop: `1.3rem`,
+          // paddingTop: `1rem`,
         }}
       >
-        <h2 style={{ width: `250px` }}>
+        <h2 style={{ width: `200px`, margin: 0, paddingTop: `.5rem` }}>
           <Logo />
         </h2>
       </div>

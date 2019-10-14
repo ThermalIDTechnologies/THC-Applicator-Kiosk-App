@@ -23,27 +23,28 @@ const IndexPage = () => (
         justifyContent: `space-evenly`,
         justifyItems: `center`,
         alignItems: `end`,
+        marginTop: `1rem`,
       }}
     >
       <div style={{ width: `250px`, marginBottom: `1rem`, gridArea: `roll` }}>
         <Link to="/page-2/">
           <Image />
-          <h3 style={{ textAlign: `center`, color: `#4A7729` }}>
+          <h3 style={{ textAlign: `center`, color: `#4A7729`, margin: 0 }}>
             THC Roll-On Pro
           </h3>
         </Link>
       </div>
-      <div style={{ width: `300px`, gridArea: `fire` }}>
+      <div style={{ width: `350px`, gridArea: `fire` }}>
         <ThcFire />
-        <h3 style={{ textAlign: `center`, color: `#4A7729` }}>THC Fire</h3>
+        <h3 style={{ textAlign: `center`, color: `#4A7729`, margin: 0 }}>THC Fire</h3>
       </div>
-      <div style={{ width: `250px`, marginBottom: `1rem`, gridArea: `wind` }}>
+      <div style={{ width: `270px`, marginBottom: `1rem`, gridArea: `wind` }}>
         <ThcWind />
-        <h3 style={{ textAlign: `center`, color: `#4A7729` }}>THC Wind</h3>
+        <h3 style={{ textAlign: `center`, color: `#4A7729`, margin: 0 }}>THC Wind</h3>
       </div>
-      <div style={{ width: `240px`, gridArea: `hero` }}>
+      <div style={{ width: `250px`, gridArea: `hero` }}>
         <ThcHero />
-        <h3 style={{ textAlign: `center`, color: `#4A7729` }}>THC Hero</h3>
+        <h3 style={{ textAlign: `center`, color: `#4A7729`, margin: 0 }}>THC Hero</h3>
       </div>
     </div>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
