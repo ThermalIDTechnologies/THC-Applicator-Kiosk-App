@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { Document, Page } from "react-pdf"
+
+import { ButtonLink } from "../components/applicatorStyles/Styles"
 import RollOnPDF from "../assets/SpecSheet_THCRollOnPro.pdf"
 
 class RollOnProPDF extends Component {
@@ -16,16 +18,25 @@ class RollOnProPDF extends Component {
     const { pageNumber, numPages } = this.state
 
     return (
-      <div >
-        <Document
-          file={RollOnPDF}
-          onLoadSuccess={this.onDocumentLoadSuccess}
-        >
-          <Page pageNumber={pageNumber} style={{ margin: `0 auto`}} />
+      <div style={{ backgroundColor: `rgba(252, 210, 153, 0.25)`, minHeight: `100vh` }}>
+        <Document file={RollOnPDF} onLoadSuccess={this.onDocumentLoadSuccess}>
+          <Page pageNumber={pageNumber} style={{ margin: `0 auto` }} />
+          <p>
+            Page {pageNumber} of {numPages}
+          </p>
+          <Page pageNumber={2} style={{ margin: `0 auto` }} />
+          <p style={{ margin: `0` }}>Page 2 of {numPages}</p>
         </Document>
-        <p>
-          Page {pageNumber} of {numPages}
-        </p>
+        <ButtonLink
+          style={{
+            position: `fixed`,
+            bottom: `20px`,
+            right: `30px`, 
+          }}
+          to="/page-2"
+        >
+          Back
+        </ButtonLink>
       </div>
     )
   }

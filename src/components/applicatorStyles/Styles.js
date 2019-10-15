@@ -18,7 +18,8 @@ export const Grid = styled.div`
 `
 export const VidCntr = styled.div`
   grid-area: video;
-  width: 685px;
+  width: 684px;
+  height: 384px;
   position: relative;
   background-color: #000;
 
@@ -113,4 +114,13 @@ export const Button = styled.button`
   background-color: #39B54A;
   border: none;
   padding: 5px 10px;
+`
+
+export const ButtonLink = styled(Link)`
+  background-color: #39B54A;
+  border: none;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
 `

@@ -40,17 +40,17 @@ const SecondPage = () => {
       <SEO title="Page two" />
       <Grid>
         <VidCntr>
-          <video ref={vidRef} width="685" controls playsInline>
+          <video ref={vidRef} controls playsInline>
             <source src="https://res.cloudinary.com/crjars/video/upload/ac_none,c_scale,q_80,vc_auto,w_685/v1571162381/THC_RollOnPro_YouTube_1.mp4" type="video/mp4" />
           </video>
         </VidCntr>
         <MainImgCntr>
           <Image />
         </MainImgCntr>
-        <a style={{ gridArea: `pdf` }} href="../assets/SpecSheet_THCRollOnPro.pdf">
+        <StyledLink style={{ gridArea: `pdf` }} to="/RollOnProPDF">
           <PDFIcon style={{ width: `75px` }} />
           <p>View Spec Sheet</p>
-        </a>
+        </StyledLink>
         <Form>
           <Input placeholder="Email address" type="text" />
           <Button onClick={e => e.preventDefault()}>Submit</Button>
