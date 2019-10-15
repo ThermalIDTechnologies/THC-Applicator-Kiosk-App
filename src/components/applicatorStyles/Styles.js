@@ -20,6 +20,7 @@ export const VidCntr = styled.div`
   grid-area: video;
   width: 685px;
   position: relative;
+  background-color: #000;
 
   ::before,
   ::after {
