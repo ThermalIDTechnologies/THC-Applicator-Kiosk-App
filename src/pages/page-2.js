@@ -40,18 +40,17 @@ const SecondPage = () => {
       <SEO title="Page two" />
       <Grid>
         <VidCntr>
-          <video ref={vidRef} width="685" controls autoPlay>
-            <source src={RollOnProVid} type="video/webm" />
+          <video ref={vidRef} width="685" controls playsInline>
             <source src={RollOnProVid2} type="video/mp4" />
           </video>
         </VidCntr>
         <MainImgCntr>
           <Image />
         </MainImgCntr>
-        <StyledLink style={{ gridArea: `pdf` }}>
+        <a style={{ gridArea: `pdf` }} href="../assets/SpecSheet_THCRollOnPro.pdf">
           <PDFIcon style={{ width: `75px` }} />
           <p>View Spec Sheet</p>
-        </StyledLink>
+        </a>
         <Form>
           <Input placeholder="Email address" type="text" />
           <Button onClick={e => e.preventDefault()}>Submit</Button>

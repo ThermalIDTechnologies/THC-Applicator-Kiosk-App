@@ -621,3 +621,8 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+canvas {
+  margin: 0 auto;
+}
