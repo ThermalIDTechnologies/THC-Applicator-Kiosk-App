@@ -41,7 +41,7 @@ const SecondPage = () => {
       <Grid>
         <VidCntr>
           <video ref={vidRef} width="685" controls playsInline>
-            <source src={RollOnProVid2} type="video/mp4" />
+            <source src="https://res.cloudinary.com/crjars/video/upload/ac_none,c_scale,q_80,vc_auto,w_685/v1571162381/THC_RollOnPro_YouTube_1.mp4" type="video/mp4" />
           </video>
         </VidCntr>
         <MainImgCntr>
