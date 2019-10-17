@@ -232,7 +232,7 @@ h1 {
   color: inherit;
   font-family: lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -452,7 +452,6 @@ form {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 noscript {
   margin-left: 0;
@@ -622,7 +621,10 @@ pre tt:after {
   }
 }
 
-
 canvas {
   margin: 0 auto;
+}
+label {
+  font-family: lato;
+  font-weight: 600;
 }

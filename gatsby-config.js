@@ -25,6 +25,19 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://thclabelsolutions.us16.list-manage.com/subscribe/post?u=febd7ff19fc1508adced460c6&amp;id=67ff521a53", // add your MC list endpoint here; see instructions below
+      },
+    },
+    {
+      resolve: 'gatsby-v2-plugin-page-transitions',
+      options: {
+        transitionTime: 1000
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `THC-Kiosk-App`,

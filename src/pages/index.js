@@ -1,53 +1,53 @@
 import React from "react"
-import { Link } from "gatsby"
+import PageTransition from "gatsby-v2-plugin-page-transitions"
 
+import { HomeGrid, StyledLink, ApplicatorTitle } from "../components/homeStyles/Styles"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import ThcFire from "../components/ThcFire"
-import ThcWind from "./../components/ThcWind"
-import ThcHero from "./../components/ThcHero"
+import ThcFire from "../components/ThcFireImg"
+import ThcWind from "./../components/ThcWindImg"
+import ThcCyclone from "../components/ThcCycloneImg"
 
 const IndexPage = () => (
   <Layout>
+    <PageTransition>
     <SEO title="Home" />
-    <div
-      style={{
-        display: `grid`,
-        gridTemplateColumns: `1fr 1fr`,
-        gridTemplateRows: `auto`,
-        gridTemplateAreas: `
-          "roll  wind"
-          "fire  hero"
-        `,
-        justifyContent: `space-evenly`,
-        justifyItems: `center`,
-        alignItems: `end`,
-        marginTop: `1rem`,
-      }}
-    >
+    <HomeGrid>
       <div style={{ width: `250px`, marginBottom: `1rem`, gridArea: `roll` }}>
-        <Link to="/page-2/">
+        <StyledLink to="/thc-roll-on-pro" >
           <Image />
-          <h3 style={{ textAlign: `center`, color: `#4A7729`, margin: 0 }}>
+          <ApplicatorTitle>
             THC Roll-On Pro
-          </h3>
-        </Link>
+          </ApplicatorTitle>
+        </StyledLink>
       </div>
-      <div style={{ width: `350px`, gridArea: `fire` }}>
-        <ThcFire />
-        <h3 style={{ textAlign: `center`, color: `#4A7729`, margin: 0 }}>THC Fire</h3>
+      <div style={{ width: `370px`, gridArea: `fire` }}>
+        <StyledLink to="/thc-fire">
+          <ThcFire />
+          <ApplicatorTitle>
+            THC FIRE
+          </ApplicatorTitle>
+        </StyledLink>
       </div>
-      <div style={{ width: `270px`, marginBottom: `1rem`, gridArea: `wind` }}>
-        <ThcWind />
-        <h3 style={{ textAlign: `center`, color: `#4A7729`, margin: 0 }}>THC Wind</h3>
+      <div style={{ width: `285px`, marginBottom: `1rem`, gridArea: `wind` }}>
+        <StyledLink to="/thc-wind">
+          <ThcWind />
+          <ApplicatorTitle>
+            THC Wind
+          </ApplicatorTitle>
+        </StyledLink>
       </div>
-      <div style={{ width: `250px`, gridArea: `hero` }}>
-        <ThcHero />
-        <h3 style={{ textAlign: `center`, color: `#4A7729`, margin: 0 }}>THC Hero</h3>
+      <div style={{ width: `285px`, gridArea: `hero` }}>
+        <StyledLink to="/thc-cyclone">
+          <ThcCyclone />
+          <ApplicatorTitle>
+            THC Cyclone
+          </ApplicatorTitle>
+        </StyledLink>
       </div>
-    </div>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
+    </HomeGrid>
+    </PageTransition>
   </Layout>
 )
 

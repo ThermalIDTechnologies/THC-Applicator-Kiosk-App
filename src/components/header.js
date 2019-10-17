@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useContext, useEffect } from "react"
 import { StoreContext } from "../context/StoreContext"
@@ -32,7 +31,6 @@ const Header = () => {
           style={{
             alignSelf: `center`,
             margin: 0,
-            padding: 0,
             color: `white`,
             fontSize: `1.8rem`,
             padding: `1rem 1.45rem`,

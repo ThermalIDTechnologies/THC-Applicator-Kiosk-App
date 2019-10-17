@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
+// import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 
 export const Grid = styled.div`
@@ -34,9 +35,9 @@ export const VidCntr = styled.div`
     top: 80%;
     max-width: 300px;
     background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
+    -webkit-box-shadow: 0 15px 10px #111;
+    -moz-box-shadow: 0 15px 10px #111;
+    box-shadow: 0 15px 10px #111;
     -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
@@ -57,6 +58,20 @@ export const VidCntr = styled.div`
 
 export const MainImgCntr = styled.div`
   width: 210px;
+  margin-bottom: 1rem;
+  grid-area: mainImg;
+  justify-self: center;
+`
+
+export const FireImgCntr = styled.div`
+  width: 260px;
+  margin-bottom: 1rem;
+  grid-area: mainImg;
+  justify-self: center;
+`
+
+export const CycImgCntr = styled.div`
+  width: 190px;
   margin-bottom: 1rem;
   grid-area: mainImg;
   justify-self: center;
@@ -102,12 +117,17 @@ export const StyledLink = styled(Link)`
 `
 
 export const Form = styled.form`
-  display: inline-flex;
+  /* display: inline-flex; */
 `
 
 export const Input = styled.input`
   border: none;
   border-radius: 0;
+
+  &:active,
+  &:focus {
+    outline-color: #39B54A;
+  }
 `
 
 export const Button = styled.button`
@@ -123,4 +143,13 @@ export const ButtonLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
   color: black;
+
+  &:active,
+  &:focus {
+    outline-color: #39B54A;
+  }
+`
+
+export const AppLink = styled(Link)`
+  text-decoration: none;
 `

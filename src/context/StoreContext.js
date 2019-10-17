@@ -1,7 +1,7 @@
-import React, { createContext, useState, useEffect } from "react"
+import React, { createContext, useState } from "react"
 
 const defaultValues = {
-  pageTitle: ""
+  pageTitle: "",
 }
 
 export const StoreContext = createContext(defaultValues)
@@ -14,7 +14,7 @@ export const StoreProvider = ({ children }) => {
       value={{
         ...defaultValues,
         pageTitle,
-        setPageTitle
+        setPageTitle,
       }}
     >
       {children}
