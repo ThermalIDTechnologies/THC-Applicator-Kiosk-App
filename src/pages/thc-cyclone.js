@@ -81,10 +81,18 @@ const ThcCyclonePage = () => {
           <CycImgCntr>
             <ThcCyclone />
           </CycImgCntr>
-          <StyledLink style={{ gridArea: `pdf` }} to="/thc-fire-pdf">
-            {/* <PDFIcon style={{ width: `75px` }} /> */}
+          <div
+            style={{
+              gridArea: `pdf`,
+              justifySelf: `center`,
+              color: `#6D6D6D`,
+              fontWeight: `700`,
+              textAlign: `center`,
+            }}
+            to="/thc-fire-pdf"
+          >
             <p>Spec Sheet Coming Soon!</p>
-          </StyledLink>
+          </div>
           <Form style={{ textAlign: `center` }} onSubmit={handleSubmit}>
             <label htmlFor="email">Receive more Info</label>
             <br />

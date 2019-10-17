@@ -40,7 +40,7 @@ class RollOnProPDF extends Component {
               bottom: `20px`,
               right: `30px`,
             }}
-            to="/roll-on-pro"
+            to="/thc-roll-on-pro"
           >
             Back
           </ButtonLink>
