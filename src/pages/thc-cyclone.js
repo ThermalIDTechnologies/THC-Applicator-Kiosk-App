@@ -50,7 +50,7 @@ const ThcCyclonePage = () => {
 
   const vidRef = useRef(null)
   useEffect(() => {
-    setPageTitle("THC FIRE")
+    setPageTitle("THC CYCLONE")
     vidRef.current.muted = true
   })
 
