@@ -52,6 +52,7 @@ const ThcFirePage = () => {
   useEffect(() => {
     setPageTitle("THC FIRE")
     vidRef.current.muted = true
+    vidRef.current.autoplay = true
   })
 
   return (

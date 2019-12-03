@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React, { useContext, useEffect } from "react"
 import { StoreContext } from "../context/StoreContext"
 
-import Logo from "../assets/thc-svg.svg"
+import Logo from "../assets/the-house-of-custom-logo.svg"
 
 const Header = () => {
   const { pageTitle, setPageTitle } = useContext(StoreContext)
@@ -45,7 +45,7 @@ const Header = () => {
           // paddingTop: `1rem`,
         }}
       >
-        <h2 style={{ width: `200px`, margin: 0, paddingTop: `.5rem` }}>
+        <h2 style={{ width: `240px`, margin: 0, paddingTop: `.5rem` }}>
           <Logo />
         </h2>
       </div>

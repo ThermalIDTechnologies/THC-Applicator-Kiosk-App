@@ -13,7 +13,6 @@ export const Grid = styled.div`
     "video video video form"
     "heading heading heading heading"
     "img1 img2 img3 home";
-  /* grid-gap: .5rem; */
   align-items: flex-end;
   margin-top: 1rem;
 `
@@ -134,6 +133,7 @@ export const Button = styled.button`
   background-color: #39B54A;
   border: none;
   padding: 5px 10px;
+  cursor: pointer;
 `
 
 export const ButtonLink = styled(Link)`

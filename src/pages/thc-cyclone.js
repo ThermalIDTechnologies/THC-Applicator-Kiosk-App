@@ -52,6 +52,7 @@ const ThcCyclonePage = () => {
   useEffect(() => {
     setPageTitle("THC CYCLONE")
     vidRef.current.muted = true
+    vidRef.current.autoplay = true
   })
 
   return (

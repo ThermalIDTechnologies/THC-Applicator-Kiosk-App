@@ -52,6 +52,7 @@ const SecondPage = () => {
   useEffect(() => {
     setPageTitle("THC ROLL-ON PRO")
     vidRef.current.muted = true
+    vidRef.current.autoplay = true
   })
 
   return (

@@ -52,6 +52,7 @@ const ThcWindPage = () => {
   useEffect(() => {
     setPageTitle("THC WIND")
     vidRef.current.muted = true
+    vidRef.current.autoplay = true
   })
 
   return (
