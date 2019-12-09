@@ -34,7 +34,9 @@ const ThcCyclonePage = () => {
   const [email, setEmail] = useState("")
   const handleSubmit = e => {
     e.preventDefault()
-    addToMailchimp(email)
+    addToMailchimp(email, {
+      APPLCTR: "THC Cyclone",
+    })
       .then(data => {
         data.result === "success"
           ? toast.success(data.msg)
@@ -74,7 +76,7 @@ const ThcCyclonePage = () => {
           <VidCntr>
             <video ref={vidRef} controls playsInline>
               <source
-                src="https://res.cloudinary.com/crjars/video/upload/c_scale,q_85,vc_auto,w_685/v1571269468/THC-Cyclone_YouTube.mp4"
+                src="https://res.cloudinary.com/crjars/video/upload/c_scale,q_90,vc_auto,w_685/v1571269468/THC-Cyclone_YouTube.mp4"
                 type="video/mp4"
               />
             </video>

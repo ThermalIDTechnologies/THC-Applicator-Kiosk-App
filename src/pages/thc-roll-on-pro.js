@@ -34,7 +34,9 @@ const SecondPage = () => {
   const [email, setEmail] = useState("")
   const handleSubmit = e => {
     e.preventDefault()
-    addToMailchimp(email)
+    addToMailchimp(email, {
+      APPLCTR: "THC Roll On Pro",
+    })
       .then(data => {
         data.result === "success"
           ? toast.success(data.msg)
@@ -74,7 +76,7 @@ const SecondPage = () => {
           <VidCntr>
             <video ref={vidRef} controls playsInline>
               <source
-                src="https://res.cloudinary.com/crjars/video/upload/ac_none,c_scale,q_85,vc_auto,w_685/v1571162381/THC_RollOnPro_YouTube_1.mp4"
+                src="https://res.cloudinary.com/crjars/video/upload/ac_none,c_scale,q_90,vc_auto,w_685/v1571162381/THC_RollOnPro_YouTube_1.mp4"
                 type="video/mp4"
               />
             </video>
